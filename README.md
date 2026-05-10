@@ -9,12 +9,6 @@
 
 ---
 
-## 📸 App Screenshot
-
-![BIR App Main Screen](screenshot.png)
-
----
-
 ## 🎯 What is this project?
 
 **Beat Improve Report (BIR)** is both:
@@ -26,6 +20,17 @@ The app collects structured session data from teenagers playing a cognitive game
 Each record includes: birth year/month, gender, station type, difficulty, session number, and **score**.
 
 But the real goal is much deeper…
+
+---
+
+## 📸 Pictures
+
+![BIR App Main Screen](Pictures/AppScreenShot.png)
+
+<div align="center">
+  <img src="Pictures/collecting_data_1.jpg" width="45%" />
+  <img src="Pictures/collecting_data_2.jpg" width="45%" />
+</div>
 
 ---
 
