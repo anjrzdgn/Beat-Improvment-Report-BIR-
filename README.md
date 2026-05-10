@@ -52,7 +52,7 @@ This app gives me the raw behavioural data to answer that question.
 
 ---
 
-## 🇮🇷 Dataset context – Iranian teenagers
+## 🪴 Dataset context – Iranian teenagers
 
 All participants are **Iranian teenagers** (age ~12‑18 years).  
 They play the same game under controlled conditions, either:
