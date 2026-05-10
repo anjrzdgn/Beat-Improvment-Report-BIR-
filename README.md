@@ -1,10 +1,8 @@
 # 🧠 Beat Improve Report (BIR) – Dataset & Cognitive Analytics
 
-[![App Version](https://img.shields.io/badge/version-1.0-blue)](https://github.com/anjrzdgn/Beat-Improvment-Report-BIR-)
+[![App Version](https://img.shields.io/badge/version-1.3-blue)](https://github.com/anjrzdgn/Beat-Improvment-Report-BIR-)
 [![Platform](https://img.shields.io/badge/platform-Android%20%7C%20Web-brightgreen)](https://github.com/anjrzdgn/Beat-Improvment-Report-BIR-)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
-[![DeepSeek](https://img.shields.io/badge/Assisted%20by-DeepSeek-blueviolet)](https://deepseek.com)
-[![Gemini](https://img.shields.io/badge/Assisted%20by-Gemini%20(Google)-blue)](https://gemini.google.com)
 
 > **A smart offline data‑collection tool** built to measure how Iranian teenagers discover and optimise game strategies – and how social influence accelerates learning.
 
