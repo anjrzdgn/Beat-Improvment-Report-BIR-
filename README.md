@@ -4,6 +4,7 @@
 [![Platform](https://img.shields.io/badge/platform-Android%20%7C%20Web-brightgreen)](https://github.com/anjrzdgn/Beat-Improvment-Report-BIR-)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
 [![DeepSeek](https://img.shields.io/badge/Assisted%20by-DeepSeek-blueviolet)](https://deepseek.com)
+[![Gemini](https://img.shields.io/badge/Assisted%20by-Gemini%20(Google)-blue)](https://gemini.google.com)
 
 > **A smart offline data‑collection tool** built to measure how Iranian teenagers discover and optimise game strategies – and how social influence accelerates learning.
 
@@ -114,9 +115,14 @@ The entire app is **self‑contained** – works without any internet connection
 
 ## 🙏 Credits
 
-- **App design & logic** – developed by me, with powerful assistance from [DeepSeek](https://deepseek.com) (AI coding companion)
-- **© Medulator App** – all rights reserved for the “Beat Improve Report” interface and branding
-- **Inspired by** – cognitive science research on hippocampus‑cerebellum loops and social learning
+This project was built with a collaborative effort between human expertise and advanced AI:
+
+- **App Design & Logic** – Conceptualised and developed by **Ali Najjarzadegan**.
+- **AI Coding Partners:**
+  - **[DeepSeek](https://deepseek.com)** – Instrumental in initial logic structuring and code generation.
+  - **[Gemini (Google)](https://gemini.google.com)** – Key role in UI/UX refinement, implementing the numeric keypad layout, audio-visual feedback systems, and ensuring cross-device responsiveness.
+- **© Medulator App** – All rights reserved for the “Beat Improve Report” interface and branding.
+- **Scientific Foundation** – Inspired by research on hippocampus‑cerebellum loops and social learning.
 
 ---
 
