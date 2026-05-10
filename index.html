@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Beat Improve Report (BIR)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="icon" type="image/png" href="icon.png">
+    <meta name="theme-color" content="#1a1a2e">
+</head>
+<body>
+    <div class="app-container">
+        <h1 class="app-title">🎯 Beat Improve Report (BIR)</h1>
+
+        <!-- نمایشگر زمان زنده -->
+        <div class="live-clock" id="liveClock">00:00:00 2026-05-10</div>
+
+        <div class="main-layout">
+            <!-- فرم ورودی (سمت راست) -->
+            <form id="birForm" class="bir-form">
+                <!-- چیدمان دو ستونی -->
+                <div class="two-columns">
+                    <!-- ستون راست -->
+                    <div class="right-col">
+                        <div class="field-group">
+                            <label>سال تولد</label>
+                            <select id="birthYear"></select>
+                        </div>
+                        <div class="field-group">
+                            <label>ماه تولد</label>
+                            <select id="birthMonth" required>
+                                <option value="فروردین">فروردین</option><option value="اردیبهشت">اردیبهشت</option>
+                                <option value="خرداد">خرداد</option><option value="تیر">تیر</option>
+                                <option value="مرداد">مرداد</option><option value="شهریور">شهریور</option>
+                                <option value="مهر">مهر</option><option value="آبان">آبان</option>
+                                <option value="آذر">آذر</option><option value="دی">دی</option>
+                                <option value="بهمن">بهمن</option><option value="اسفند">اسفند</option>
+                            </select>
+                        </div>
+                        <div class="field-group">
+                            <label>جنسیت</label>
+                            <select id="gender">
+                                <option value="F">F (دختر)</option><option value="M">M (پسر)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- ستون چپ -->
+                    <div class="left-col">
+                        <div class="field-group">
+                            <label>شماره استیشن</label>
+                            <select id="station">
+                                <option value="1">1</option><option value="2">2</option>
+                            </select>
+                        </div>
+                        <div class="field-group" id="difficultyGroup" style="display: none;">
+                            <label>سختی کار</label>
+                            <select id="difficulty">
+                                <option value="جهت‌دار-آسان">جهت‌دار-آسان</option>
+                                <option value="جهت‌دار-متوسط">جهت‌دار-متوسط</option>
+                                <option value="جهت‌دار-سخت">جهت‌دار-سخت</option>
+                                <option value="نقطه‌ای-آسان">نقطه‌ای-آسان</option>
+                                <option value="نقطه‌ای-متوسط">نقطه‌ای-متوسط</option>
+                                <option value="نقطه‌ای-سخت">نقطه‌ای-سخت</option>
+                            </select>
+                        </div>
+                        <!-- ردیف دو فیلدی عددی -->
+                        <div class="double-field-row">
+                            <div class="field-group half numeric-field">
+                                <label>بار چندم</label>
+                                <input type="text" id="sessionNumber" class="numeric-input" placeholder="عدد" readonly>
+                            </div>
+                            <div class="field-group half numeric-field">
+                                <label>امتیاز</label>
+                                <input type="text" id="score" class="numeric-input score-input" placeholder="عدد" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- دکمه‌ها -->
+                <div class="button-group">
+                    <button type="button" id="exportTodayBtn" class="btn-export">📁 خروجی امروز</button>
+                    <button type="button" id="refreshBtn" class="btn-refresh">♻️ تازه‌سازی صفحه</button>
+                    <button type="submit" id="saveBtn" class="btn-save">💾 ذخیره</button>
+                </div>
+
+                <div class="today-counter" id="todayCounter">تعداد داده‌های ذخیره‌شده امروز: 0</div>
+                <div class="clear-cache-wrapper">
+                    <button type="button" id="clearTodayBtn" class="btn-clear">🗑️ پاک کردن داده‌های امروز</button>
+                </div>
+                <div class="footer-copyright">A Medulator App© May-2026</div>
+            </form>
+
+            <!-- کیبورد عددی اختصاصی (سمت چپ) -->
+            <div class="custom-keyboard" id="customKeyboard">
+                <div class="keyboard-row">
+                    <button type="button" class="key-btn" data-value="3">3</button>
+                    <button type="button" class="key-btn" data-value="2">2</button>
+                    <button type="button" class="key-btn" data-value="1">1</button>
+                </div>
+                <div class="keyboard-row">
+                    <button type="button" class="key-btn" data-value="4">4</button>
+                    <button type="button" class="key-btn" data-value="5">5</button>
+                    <button type="button" class="key-btn" data-value="6">6</button>
+                </div>
+                <div class="keyboard-row">
+                    <button type="button" class="key-btn" data-value="7">7</button>
+                    <button type="button" class="key-btn" data-value="8">8</button>
+                    <button type="button" class="key-btn" data-value="9">9</button>
+                </div>
+                <div class="keyboard-row">
+                    <button type="button" class="key-btn" data-value="0">0</button>
+                    <button type="button" id="clearDigitBtn" class="key-btn key-clear">⌫</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="message" class="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
